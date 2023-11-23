@@ -1,5 +1,6 @@
 @import './base.css';
 
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -8,17 +9,64 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: none;
+}
+
+button:disabled:active {
+  background: none;
+}
+
+button:disabled:focus {
+  outline: none;
+}
+
+button:disabled:hover,
+button:disabled:active,
+button:disabled:focus {
+  color: inherit;
+}
+
+button:disabled:hover,
+button:disabled:active {
+  text-decoration: none;
+}
+
+button:disabled:hover,
+button:disabled:active,
+
+button:disabled:focus {
+  color: inherit;
 }
 
 @media (min-width: 1024px) {
@@ -31,5 +79,6 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+
   }
 }
